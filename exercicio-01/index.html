@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        bady{
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: black ;
+            font-weight: bolder;
+        }
+        .especial:visited{
+         /* o visited se for colocado depois di hover o hover para de funcionar/ 
+         sempre coloque antes*/
+            color: rgb(3, 2, 10);
+        }
+        .especial:hover{
+            text-decoration: underline;
+            color: rgb(194, 19, 19);
+        }
+        .especial:active{
+            /* essa pseudo classe so aparece se vc precionar o click*/
+            color: rgb(244, 242, 250);
+
+        }
+        .especial::after{ /*after content vc pode colocar setas tmbm, aula pseudo-elemeno */
+            content:"[link]";
+            color: rgb(190, 190, 194);
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="#">repostorio github</a></li>
+        <li> <a href="https://www.youtube.com/watch?v=vMlrcOVr7po&t=208s" class="especial" target="_blank">canal do youtub</a></li>
+        <li><a href="#" class="especial">faceboock</a></li>
+    </ul>
+    
+</body>
+</html>
