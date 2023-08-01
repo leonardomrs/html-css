@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #conteiner{ /*para alinhar na vertical colocamos o que esta dentro do conteiner como position abisolute  e depois usamaos a propriedade left e top com 50%  e transform: translate -50% -50% assim o conteudo fica no meio do conteiner/ mais informacoes aula centralizaçao vertical de caixa*/
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50% ;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 <body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
     
 </body>
 </html>
